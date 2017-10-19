@@ -25,6 +25,10 @@ function dec(n) {
 }
 
 function makeInt(n) {
-  parseInt(n, 10)
+  if (n === NaN) {
+    return 0
+  } else {
+    parseInt(n, 10)
+  }
   return n
 }
